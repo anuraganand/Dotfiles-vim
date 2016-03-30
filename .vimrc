@@ -60,7 +60,11 @@ call plug#end()
         autocmd BufEnter * if bufname("") !~ "^\[A-Za-z0-9\]*://" | lcd %:p:h | endif
         " Always switch to the current file directory
     endif
-
+    nnoremap <C-J> <C-W><C-J>
+    nnoremap <C-K> <C-W><C-K>
+    nnoremap <C-L> <C-W><C-L>
+    nnoremap <C-H> <C-W><C-H>
+    " inoremap jk <esc>
     color smyck
     "if filereadable(expand("~/.vim/plugged/vim-colors-solarized/colors/solarized.vim"))
         "let g:solarized_termcolors=256
@@ -240,7 +244,7 @@ call plug#end()
         set guioptions-=L
         set guioptions-=m
         set guioptions+=a
-        set guifont=Source\ Code\ Pro\ Medium\ 10
+        set guifont=Hermit\ Medium\ 10
         set lines=40
     endif
 
@@ -275,7 +279,7 @@ call plug#end()
     " syntastic {
     if isdirectory(expand("~/.vim/plugged/syntastic"))
         " To close the error window when using :bdelete command
-        nnoremap <silent> <C-d> :lclose<CR>:bdelete<CR>
+        " nnoremap <silent> <C-d> :lclose<CR>:bdelete<CR>
         cabbrev <silent> bd lclose\|bdelete
 
         let g:syntastic_python_python_exec = '/usr/bin/python3' " use python3

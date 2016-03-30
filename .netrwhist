@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/home'
+let g:netrw_dirhist_2='/home/anurag'
+let g:netrw_dirhist_3='/home/anurag/Programms'
+let g:netrw_dirhist_4='/home/anurag/Programms/BTP'
